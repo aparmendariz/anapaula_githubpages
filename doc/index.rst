@@ -7,7 +7,7 @@ Welcome to Example's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 6
    :caption: Contents:
 
    some-feature.md
