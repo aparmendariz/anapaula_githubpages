@@ -37,6 +37,8 @@ extensions = [
 #VERY IMPORTANT: To include the numpy docstrings in the init: 
 napoleon_include_init_with_doc = True
 
+autosummary_generate = True
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
