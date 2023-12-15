@@ -3,13 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Example's documentation!
-===================================
+Welcome to the MCF!
+===============================
 
 .. toctree::
-   :maxdepth: 6
+   :maxdepth: 2
    :caption: Contents:
 
-   some-feature.md
-   another-feature.md
-   api.md
+   landing_page.md
+   Getting_started.rst
+   User_guide.md
+   Algorithm_reference.md
+   api.rst
+   changelog.md
