@@ -1,0 +1,1906 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>API reference &#8212; Example 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to the MCF!" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Example 0.1 documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        API reference
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="#">
+                        API reference
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">API reference</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="api-reference">
+<h1>API reference<a class="headerlink" href="#api-reference" title="Link to this heading">#</a></h1>
+<section id="module-mcf_example">
+<span id="mcf"></span><h2>MCF<a class="headerlink" href="#module-mcf_example" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mcf_example.</span></span><span class="sig-name descname"><span class="pre">ModifiedCausalForest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cf_alpha_reg_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_alpha_reg_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_alpha_reg_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_boot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_chunks_maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_n_min_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_n_min_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_n_min_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_n_min_treat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_nn_main_diag_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_m_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_m_random_poisson</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_m_share_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_m_share_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_match_nn_prog_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_mce_vart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_p_diff_penalty</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_subsample_factor_eval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_subsample_factor_forest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_random_thresholds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_vi_oob_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_adjust_limits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_max_del_train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_min_p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_quantil</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ct_grid_dr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ct_grid_nn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ct_grid_w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_check_perfectcorr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_clean_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_min_dummy_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_screen_covariates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs_rf_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs_other_sample</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs_other_sample_share</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.33</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_d_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'discrete'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_iate_eff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_panel_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_mp_parallel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_outfiletext</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_outpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_output_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_panel_in_rf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_replication</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_weighted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_cs_cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_cs_cv_k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_cs_share</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_uncenter_po</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_amgate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_ate_no_se_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_atet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_bgate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_bt_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_choice_based_sampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_choice_based_probs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_ci_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_cluster_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_cond_var</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gates_minus_previous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gates_smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gates_smooth_bandwidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gates_smooth_no_evalu_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gatet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gmate_no_evalu_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gmate_sample_share</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_iate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_iate_se</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_iate_m_ate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_knn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_knn_const</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_knn_min_k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_nw_bandw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_nw_kern</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_max_cats_z_vars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_max_weight_share</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_se_boot_ate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_se_boot_gate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_se_boot_iate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_bgate_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_cluster_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_bin_corr_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_bin_corr_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_est_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_kmeans_no_of_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_kmeans_max_tries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_kmeans_replications</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_kmeans_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_random_forest_vi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_relative_to_first_group_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_plots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_d_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_id_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_w_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_balance_name_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_balance_name_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_always_in_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_always_in_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_remain_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_remain_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_y_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_y_tree_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_z_name_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_z_name_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_z_name_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_del_forest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_descriptive_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_dpi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_fontsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_keep_w0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_no_filled_plot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_max_cats_cont_vars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_max_save_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_ray_del</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('refs',)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_ray_objstore_multiplier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_ray_shutdown</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_vim_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_weights_tree_batch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_weights_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_output_no_new_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_red_largest_group_train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_return_iate_sp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_seed_sample_split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">67567885</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_share_forest_sample</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_show_plots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_weight_as_sparse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_weight_as_sparse_splits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_with_output</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mcf_example.ModifiedCausalForest" title="Link to this definition">#</a></dt>
+<dd><p>The class contains all methods necessary for a complete mcf estimation.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.blind_dict">
+<span class="sig-name descname"><span class="pre">blind_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.blind_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters to compute (partially) blinded IATEs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.cf_dict">
+<span class="sig-name descname"><span class="pre">cf_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.cf_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in training the forest (directly).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.cs_dict">
+<span class="sig-name descname"><span class="pre">cs_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.cs_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in common support adjustments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.ct_dict">
+<span class="sig-name descname"><span class="pre">ct_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.ct_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in dealing with continuous treatments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.int_dict">
+<span class="sig-name descname"><span class="pre">int_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.int_dict" title="Link to this definition">#</a></dt>
+<dd><p>Internal parameters used in various parts of the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.dc_dict">
+<span class="sig-name descname"><span class="pre">dc_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.dc_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in data cleaning.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.fs_dict">
+<span class="sig-name descname"><span class="pre">fs_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.fs_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in feature selection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.forest">
+<span class="sig-name descname"><span class="pre">forest</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.forest" title="Link to this definition">#</a></dt>
+<dd><p>List of list containing the estimated causal forest.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.gen_dict">
+<span class="sig-name descname"><span class="pre">gen_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.gen_dict" title="Link to this definition">#</a></dt>
+<dd><p>General parameters used in various parts of the programme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.lc_dict">
+<span class="sig-name descname"><span class="pre">lc_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.lc_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in local centering.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.p_dict">
+<span class="sig-name descname"><span class="pre">p_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.p_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used by prediction method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.post_dict">
+<span class="sig-name descname"><span class="pre">post_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.post_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in analyse method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.time_strings">
+<span class="sig-name descname"><span class="pre">time_strings</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.time_strings" title="Link to this definition">#</a></dt>
+<dd><p>Detailed information on how the long the different methods needed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.var_dict">
+<span class="sig-name descname"><span class="pre">var_dict</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.var_dict" title="Link to this definition">#</a></dt>
+<dd><p>Variable names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.var_x_type">
+<span class="sig-name descname"><span class="pre">var_x_type</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.var_x_type" title="Link to this definition">#</a></dt>
+<dd><p>Types of covariates (internal).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.var_x_values">
+<span class="sig-name descname"><span class="pre">var_x_values</span></span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.var_x_values" title="Link to this definition">#</a></dt>
+<dd><p>Values of covariates (internal).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">train</span> <span class="pre">:</span> <span class="pre">Building</span> <span class="pre">the</span> <span class="pre">forest</span> <span class="pre">with</span> <span class="pre">training</span> <span class="pre">data.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">predict</span> <span class="pre">:</span> <span class="pre">Predicting</span> <span class="pre">the</span> <span class="pre">effects</span> <span class="pre">with</span> <span class="pre">prediction</span> <span class="pre">data.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">analyse</span> <span class="pre">:</span> <span class="pre">Descriptively</span> <span class="pre">analyse</span> <span class="pre">the</span> <span class="pre">estimated</span> <span class="pre">IATEs.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">blinder_iates</span> <span class="pre">:</span> <span class="pre">Compute</span> <span class="pre">'standard'</span> <span class="pre">IATEs</span> <span class="pre">as</span> <span class="pre">well</span> <span class="pre">as</span> <span class="pre">IATEs</span> <span class="pre">that</span> <span class="pre">are</span> <span class="pre">to</span></span></dt>
+<dd><p>to a certain extent blinder than the standard ones.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cf_alpha_reg_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_alpha_reg_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_alpha_reg_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_boot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_chunks_maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_n_min_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_n_min_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_n_min_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_n_min_treat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_nn_main_diag_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_m_grid</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_m_random_poisson</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_m_share_max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_m_share_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_match_nn_prog_score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_mce_vart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_p_diff_penalty</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_subsample_factor_eval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_subsample_factor_forest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_random_thresholds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_vi_oob_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_adjust_limits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_max_del_train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_min_p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_quantil</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cs_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ct_grid_dr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ct_grid_nn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ct_grid_w</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_check_perfectcorr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_clean_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_min_dummy_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_screen_covariates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs_rf_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs_other_sample</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs_other_sample_share</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.33</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_d_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'discrete'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_iate_eff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_panel_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_mp_parallel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_outfiletext</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_outpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_output_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_panel_in_rf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_replication</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_weighted</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_cs_cv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_cs_cv_k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_cs_share</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_uncenter_po</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lc_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_amgate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_ate_no_se_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_atet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_bgate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_bt_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_choice_based_sampling</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_choice_based_probs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_ci_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_cluster_std</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_cond_var</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gates_minus_previous</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gates_smooth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gates_smooth_bandwidth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gates_smooth_no_evalu_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gatet</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gmate_no_evalu_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_gmate_sample_share</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_iate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_iate_se</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_iate_m_ate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_knn</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_knn_const</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_knn_min_k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_nw_bandw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_nw_kern</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_max_cats_z_vars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_max_weight_share</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_se_boot_ate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_se_boot_gate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_se_boot_iate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_bgate_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_cluster_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_bin_corr_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_bin_corr_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_est_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_kmeans_no_of_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_kmeans_max_tries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_kmeans_replications</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_kmeans_yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_random_forest_vi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_relative_to_first_group_only</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_plots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_d_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_id_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_w_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_balance_name_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_balance_name_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_always_in_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_always_in_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_remain_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_remain_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_name_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_y_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_y_tree_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_z_name_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_z_name_ord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_z_name_unord</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_del_forest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_descriptive_stats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_dpi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_fontsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_keep_w0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_no_filled_plot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_max_cats_cont_vars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_max_save_values</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_ray_del</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('refs',)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_ray_objstore_multiplier</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_ray_shutdown</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_vim_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_weights_tree_batch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_mp_weights_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_output_no_new_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_red_largest_group_train</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_return_iate_sp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_seed_sample_split</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">67567885</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_share_forest_sample</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_show_plots</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_verbose</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_weight_as_sparse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_weight_as_sparse_splits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_with_output</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Define Constructor for ModifiedCausalForest class.</p>
+<section id="args">
+<h3>Args:<a class="headerlink" href="#args" title="Link to this heading">#</a></h3>
+<dl>
+<dt>cf_alpha_reg_grid<span class="classifier">Integer (or None), optional</span></dt><dd><p>Minimum remaining share when splitting leaf: Number of grid values.
+If grid is used, optimal value is determined by out-of-bag
+estimation of objective function. Default (or None) is 1.</p>
+</dd>
+<dt>cf_alpha_reg_max<span class="classifier">Float (or None), optional</span></dt><dd><p>Minimum remaining share when splitting leaf: Largest value of
+grid (keep it below 0.2). Default (or None) is 0.15.</p>
+</dd>
+<dt>cf_alpha_reg_min<span class="classifier">Float (or None), optional</span></dt><dd><p>Minimum remaining share when splitting leaf: Smallest value of
+grid (keep it below 0.2). Default (or None) is 0.05.</p>
+</dd>
+<dt>cf_boot<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of Causal Trees. Default (or None) is 1000.</p>
+</dd>
+<dt>cf_chunks_maxsize<span class="classifier">Integer (or None), optional</span></dt><dd><p>Randomly split training data in chunks and take average of the
+estimated parameters to improve scalability (increases speed and
+reduces demand on memory, but may increase finite sample bias
+somewhat).
+If cf_chunks_maxsize is larger than sample size, ther is no random
+splitting.
+If None:  cf_chunks_maxsize = round(60000 + sqrt(number of</p>
+<blockquote>
+<div><p>observations - 60000))</p>
+</div></blockquote>
+<p>Default is None.</p>
+</dd>
+<dt>cf_n_min_grid<span class="classifier">Integer (or None), optional</span></dt><dd><p>Minimum leaf size: Number of grid values.
+If grid is used, optimal value is determined by out-of-bag
+estimation of objective function. Default (or None) is 1.</p>
+</dd>
+<dt>cf_n_min_max<span class="classifier">Integer (or None), optional</span></dt><dd><p>Minimum leaf size: Largest minimum leaf size.
+If None: A = sqrt(number of observations in smallest</p>
+<blockquote>
+<div><blockquote>
+<div><p>treatment group) / 6, at least 3</p>
+</div></blockquote>
+<p>cf_n_min_max = A * number of treatments.</p>
+</div></blockquote>
+<p>Default is None.</p>
+</dd>
+<dt>cf_n_min_min<span class="classifier">Integer (or None), optional</span></dt><dd><p>Minimum leaf size: Smallest minimum leaf size.
+If None: A = (number of observations</p>
+<blockquote>
+<div><blockquote>
+<div><p>in smallest treatment group) ** 0.4, at least 2</p>
+</div></blockquote>
+<p>cf_n_min_min = A * number of treatments.</p>
+</div></blockquote>
+<p>Default is None.</p>
+</dd>
+<dt>cf_n_min_treat<span class="classifier">Integer (or None), optional</span></dt><dd><p>Minimum number of observations per treatment in leaf.
+A higher value reduces the risk that a leaf cannot be filled with
+outcomes from all treatment arms in the evaluation subsample.
+There is no grid based tuning for this parameter.
+This parameter impacts the minimum leaf size which will be at least
+to n_min_treat * number of treatments.
+None: (n_min_min+n_min_max)/2 / number of treatments /4,at least 2.
+Default is None.</p>
+</dd>
+<dt>cf_match_nn_prog_score<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Choice of method of nearest neighbour matching.
+True: Prognostic scores. False: Inverse of covariance matrix of
+features. Default (or None) is True.</p>
+</dd>
+<dt>cf_nn_main_diag_only<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Nearest neighbour matching: Use main diagonal of covariance matrix
+only. Only relevant if match_nn_prog_score == False.
+Default (or None) is False.</p>
+</dd>
+<dt>cf_m_grid<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of variables used at each new split of tree: Number of grid
+values.
+If grid is used, optimal value is determined by out-of-bag
+estimation of objective function. Default (or None) is 1.</p>
+</dd>
+<dt>cf_m_random_poisson<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Number of variables used at each new split of tree:
+True: Number of randomly selected variables is stochastic for each</p>
+<blockquote>
+<div><p>split, drawn from a Poisson distribution. Grid gives mean
+value of 1 + poisson distribution (m-1) (m is determined by
+cf_m_share parameters).</p>
+</div></blockquote>
+<p>False : No additional randomisation. Default (or None) is True.</p>
+</dd>
+<dt>cf_m_share_max<span class="classifier">Float (or None), optional</span></dt><dd><p>Share of variables used at each new split of tree: Maximum.
+Default (or None) is 0.6.</p>
+</dd>
+<dt>cf_m_share_min<span class="classifier">Float (or None), optional</span></dt><dd><p>Share of variables used at each new split of tree: Maximum.
+Default (or None) is 0.1.</p>
+</dd>
+<dt>cf_mce_vart<span class="classifier">Integer (or None), optional</span></dt><dd><dl>
+<dt>Splitting rule for tree building:</dt><dd><p>0: mse’s of regression only considered
+1: mse+mce criterion (default)
+2: -var(effect): heterogeneity maximising splitting rule of</p>
+<blockquote>
+<div><p>Wager &amp; Athey (2018)</p>
+</div></blockquote>
+<p>3: randomly switching between outcome-mse+mce criterion
+&amp; penalty functions</p>
+</dd>
+</dl>
+<p>Default (or None) is 1.</p>
+</dd>
+<dt>cf_p_diff_penalty<span class="classifier">Integer (or None), optional</span></dt><dd><dl>
+<dt>Penalty function (depends on value of mce_vart):</dt><dd><p>mce_vart == 0: Irrelevant
+mce_vart == 1: Multiplier of penalty (in terms of var(y))</p>
+<blockquote>
+<div><p>0: no penalty
+None: 2*((n*subsam_share)**0.9)/(n*subsam_share)*</p>
+<blockquote>
+<div><p>sqrt(no_of_treatments*(no_of_treatments-1)/2).</p>
+</div></blockquote>
+</div></blockquote>
+<dl>
+<dt>mce_vart == 2: Multiplier of penalty (in terms of MSE(y) value</dt><dd><blockquote>
+<div><p>function without splits) for penalty.</p>
+</div></blockquote>
+<p>0: no penalty
+None: 100*4*(n*f_c.subsam_share)^0.8)/(n*f_c.subsam_share).</p>
+</dd>
+<dt>mce_vart == 3: Probability of using p-score (0-1)</dt><dd><p>None: 0.5.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Increase value if balancing tests indicate problems.
+Default is None.</p>
+</dd>
+<dt>cf_subsample_factor_forest<span class="classifier">Float (or None), optional</span></dt><dd><p>Multiplier of default size of subsampling sample (S) used to build
+tree. S=min(0.67,(2*(n^0.8)/n)); n: # of training observations.
+S * cf_subsample_factor_forest is not larger than 80%.
+Default (or None) is 1.</p>
+</dd>
+<dt>cf_subsample_factor_eval<span class="classifier">Float or Boolean  (or None), optional</span></dt><dd><dl>
+<dt>Size of subsampling sample used to populate tree.</dt><dd><p>False: No subsampling in evaluation subsample
+True or None: 2 * subsample size used for tree building (to</p>
+<blockquote>
+<div><p>avoid too many empty leaves)</p>
+</div></blockquote>
+<p>Float (&gt;0): Multiplier of subsample size used for tree building</p>
+</dd>
+</dl>
+<p>In particular for larger samples, using subsampling in evaluation
+will speed up computations and reduces demand on memory.
+Tree-specific subsampling in evaluation sample increases speed
+at which asymtotic bias disappears (at the expense of slower
+disappearance of the variance; however, simulations so far show no
+relevant impact). Default is None.</p>
+</dd>
+<dt>cf_random_thresholds<span class="classifier">Integer (or None), optional</span></dt><dd><p>Use only a random selection of values for splitting (continuous
+feature only; re-randomize for each splitting decision; fewer
+thresholds speeds up programme but may lead to less accurate
+results).</p>
+<blockquote>
+<div><p>0: no random thresholds.
+&gt; 0: number of random thresholds used for ordered variables.
+None: 4 + # of training observations**0.2 .</p>
+</div></blockquote>
+<p>Default is None.</p>
+</dd>
+<dt>cf_vi_oob_yes<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Variable importance for causal forest computed by permuting
+single variables and comparing share of increase in objective
+function of mcf (computed with out-of-bag data).
+Default (or None) is False.</p>
+</dd>
+<dt>cs_type<span class="classifier">Integer (or None), optional</span></dt><dd><dl>
+<dt>Common support adjustment: Method.</dt><dd><p>0: No common support adjustment
+1,2: Support check based on estimated classification forests.</p>
+<blockquote>
+<div><p>1: Min-max rules for probabilities in treatment subsamples.
+2: Enforce minimum and maximum probabilities for all obs</p>
+<blockquote>
+<div><p>all but one probability</p>
+</div></blockquote>
+<p>Observations off support are removed. Out-of-bag predictions
+are used to avoid overfitting (which would lead to a too
+large reduction in the number of observations).</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>Default (or None) is 1.</p>
+</dd>
+<dt>cs_adjust_limits<span class="classifier">Float (or None), optional</span></dt><dd><dl>
+<dt>Common support adjustment: Accounting for multiple treatments.</dt><dd><p>None: (number of treatments - 2) * 0.05
+If cs_type &gt; 0:</p>
+<blockquote>
+<div><p>upper limit <a href="#id1"><span class="problematic" id="id2">*</span></a>= 1+support_adjust_limits,
+lower limit <a href="#id3"><span class="problematic" id="id4">*</span></a>= 1-support_adjust_limits</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>The restrictiveness of the common support criterion increases with
+the number of treatments. This parameter allows to reduce this
+restrictiveness. Default is None.</p>
+</dd>
+<dt>cs_max_del_train<span class="classifier">Float (or None), optional</span></dt><dd><dl class="simple">
+<dt>Common support adjustment: If share of observations in training</dt><dd><p>data used that are off support is larger than cs_max_del_train
+(0-1), an exception is raised. In this case, user should change
+input data. Default (or None) is 0.5.</p>
+</dd>
+</dl>
+</dd>
+<dt>cs_min_p<span class="classifier">Float (or None), optional</span></dt><dd><dl class="simple">
+<dt>Common support adjustment: If cs_type == 2, observations are</dt><dd><p>deleted if p(d=m|x) is less or equal than cs_min_p for at least
+one treatment. Default (or None) is 0.01.</p>
+</dd>
+</dl>
+</dd>
+<dt>cs_quantil<span class="classifier">Float (or None), optional</span></dt><dd><dl class="simple">
+<dt>Common support adjustment: How to determine upper and lower bounds.</dt><dd><dl class="simple">
+<dt>If CS_TYPE == 1: 1 or None: min-max rule</dt><dd><p>&lt; 1: respective quantil</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Default (or None) is 1.</p>
+</dd>
+<dt>ct_grid_dr<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of grid point for discretization of continuous treatment
+(with 0 mass point; grid is defined in terms of quantiles of
+continuous part of treatment): Dose response function.
+Default (or None) is 100.</p>
+</dd>
+<dt>ct_grid_nn<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of grid point for discretization of continuous treatment
+(with 0 mass point; grid is defined in terms of quantiles of
+continuous part of treatment): Neighbourhood matching.
+Default (or None) is 10.</p>
+</dd>
+<dt>ct_grid_w<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of grid point for discretization of continuous treatment
+(with 0 mass point; grid is defined in terms of quantiles of
+continuous part of treatment): Weights. Default (or None) is 10.</p>
+</dd>
+<dt>dc_clean_data<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Clean covariates. Remove all rows with missing observations and
+unnecessary variables from DataFrame. Default (or None) is True.</p>
+</dd>
+<dt>dc_check_perfectcorr<span class="classifier">Boolean (or None)</span></dt><dd><p>Screen and clean covariates: Variables that are perfectly
+correlated with each others will be deleted.
+Default (or None) is True.</p>
+</dd>
+<dt>dc_min_dummy_obs<span class="classifier">Integer (or None), optional</span></dt><dd><p>Screen covariates: If &gt; 0 dummy variables with
+less than dc_min_dummy_obs observations in one category will be
+deleted. Default (or None) is 10.</p>
+</dd>
+<dt>dc_screen_covariates<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Screen and clean covariates. Default (or None) is True.</p>
+</dd>
+<dt>fs_yes<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Feature selection before building causal forest: A feature is
+deleted if it is irrelevant in the reduced forms for the treatment
+AND the outcome. Reduced forms are computed with random forest
+classifiers or random forest regression, depending on the type of
+variable. Irrelevance is measured by variable importance measures
+based on randomly permuting a single variable and checking its
+reduction in either accuracy (classification) or R2 (regression)
+compared to the test set prediction based on the full model.
+Exceptions: (i) If the correlation of two variables to be deleted
+is larger than 0.5, one of the two variables is kept.
+(ii) Variables used to compute GATEs, MGATEs, AMGATEs. Nor are
+variables removed if they are contained in ‘var_x_name_remain_ord’
+or ‘var_x_name_remain_unord’ or are needed otherwise.
+If the number of variables is very large (and the space of
+relevant features is much sparser, then using feature selection is
+likely to improve computational and statistical properties of the
+mcf etimator). Default (or None) is False.</p>
+</dd>
+<dt>fs_rf_threshold<span class="classifier">Integer or Float (or None), optional</span></dt><dd><p>Feature selection: Threshold in terms of relative loss of variable
+importance in %. Default (or None) is 1.</p>
+</dd>
+<dt>fs_other_sample<span class="classifier">Boolean (or None), optional</span></dt><dd><dl class="simple">
+<dt>True (default): Random sample from training data used. These</dt><dd><p>observations will not be used for causal forest.</p>
+</dd>
+</dl>
+<p>False: Use the same sample as used for causal forest estimation.
+Default (or None) is True.</p>
+</dd>
+<dt>fs_other_sample_share<span class="classifier">Float (or None), optional</span></dt><dd><p>Feature selection: Share of sample used for feature selection
+(only relevant if fs_other_sample is True).
+Default (or None) is 0.33.</p>
+</dd>
+<dt>gen_d_type<span class="classifier">String (or None), optional</span></dt><dd><dl class="simple">
+<dt>Type of treatment. ‘discrete’: Discrete treatment.</dt><dd><p>‘continuous’: Continuous treatment.</p>
+</dd>
+</dl>
+<p>Default (or None) is ‘discrete’.</p>
+</dd>
+<dt>gen_iate_eff<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Additionally, compute more efficient IATE (IATE are estimated twice
+and averaged where role of tree_building and tree_filling sample is
+exchanged; X-fitting). No inference is not attempted for these
+parameters. Default (or None) is False.</p>
+</dd>
+<dt>gen_mp_parallel<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of parallel processes (using ray on CPU). The smaller this
+value is, the slower the programme, the smaller its demand on RAM.
+None: 80% of logical cores. Default is None.</p>
+</dd>
+<dt>gen_outfiletext<span class="classifier">String (or None), optional</span></dt><dd><p>File for text output. <a href="#id5"><span class="problematic" id="id6">*</span></a>.txt file extension will be added.
+None: ‘txtFileWithOutput’. Default is None.</p>
+</dd>
+<dt>gen_outpath<span class="classifier">String (or None), optional</span></dt><dd><p>Path were the output is written too (text, estimated effects, etc.)
+If specified directory does not exist, it will be created.
+None: An <a href="#id7"><span class="problematic" id="id8">*</span></a>/out directory below the current directory is used.
+Default is None.</p>
+</dd>
+<dt>gen_output_type<span class="classifier">Integer (or None), optional</span></dt><dd><p>Destination of text output. 0: Terminal. 1: File. 2: Terminal and
+file. Default (or None) is 2.</p>
+</dd>
+<dt>gen_panel_data<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Panel data used. p_cluster_std is set to True.
+Default (or None) is False.</p>
+</dd>
+<dt>gen_panel_in_rf<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Panel data used: Use panel structure also when building the random
+samples within the forest procedure. Default (or None) is True.</p>
+</dd>
+<dt>gen_replication<span class="classifier">Boolean (or None), optional</span></dt><dd><p>If True all scikit-learn based computations will NOT use multi-
+processing. Default (or None) is False.</p>
+</dd>
+<dt>gen_weighted<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Use of sampling weights to be provided in var_w_name.
+Default (or None) is False.</p>
+</dd>
+<dt>lc_cs_cv<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Data to be used for local centering &amp; common support adjustment.
+True: Crossvalidation. False: Random sample not to be used for
+forest building. Default (or None) is True.</p>
+</dd>
+<dt>lc_cs_cv_k<span class="classifier">Integer (or None), optional</span></dt><dd><p>Data to be used for local centering &amp; common support adjustment:
+Number of folds in cross-validation (if lc_cs_cv is True).
+Default (or None) is 5.</p>
+</dd>
+<dt>lc_cs_share<span class="classifier">Float (or None), optional</span></dt><dd><p>Data to be used for local centering &amp; common support adjustment:
+Share of trainig data (if lc_cs_cv is False).
+Default (or None) is 0.25.</p>
+</dd>
+<dt>lc_yes<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Local centering. Default (or None) is True.</p>
+</dd>
+<dt>lc_uncenter_po<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Predicted potential outcomes are re-adjusted for local centering
+are added to data output (iate and iate_eff in results dictionary).
+Default (or None) is True.</p>
+</dd>
+<dt>p_atet<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Compute effects for specific treatment groups. Only possible if
+treatment is included in prediction data.
+Default (or None) is False.</p>
+</dd>
+<dt>p_gatet<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Compute effects for specific treatment groups. Only possible if
+treatment is included in prediction data.
+Default (or None) is False.</p>
+</dd>
+<dt>p_amgate<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Estimate a GATE that is balanced in all other features.
+Default (or None) is False.</p>
+</dd>
+<dt>p_bgate<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Estimate a GATE that is balanced in selected features (as specified
+in var_bgate_name. Default (or None) is False.</p>
+</dd>
+<dt>p_gates_minus_previous<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Estimate increase of difference of GATEs, AMGATE, BGATEs when
+evaluated at next larger observed value.
+Default (or None) is False.</p>
+</dd>
+<dt>p_gates_smooth<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Alternative way to estimate GATEs for continuous features. Instead
+of discretizing variable, its GATE is evaluated at
+p_gates_smooth_no_evalu_points. Since there are likely to be no
+observations, a local neighbourhood around the evaluation points is
+considered. Default (or None) is True.</p>
+</dd>
+<dt>p_gates_smooth_bandwidth<span class="classifier">Float (or None), optional</span></dt><dd><p>Multiplier for bandwidth used in (B,AM)GATE estimation with smooth
+variables. Default is 1.</p>
+</dd>
+<dt>p_gates_smooth_no_evalu_points<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of evaluation points for discretized variables in GATE
+estimation. Default (or None) is 50.</p>
+</dd>
+<dt>p_gmate_no_evalu_points<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of evaluation points for discretized variables in (AM)BGATE
+estimation. Default (or None) is 50.</p>
+</dd>
+<dt>p_gmate_sample_share<span class="classifier">Float (or None), optional</span></dt><dd><p>Implementation of (AM)BGATE estimation is very cpu intensive.
+Therefore, random samples are used to speed up the programme if
+there are number observations  / number of evaluation points &gt; 10.
+None: If observation in prediction data (n) &lt; 1000: 1</p>
+<blockquote>
+<div><p>If n &gt;= 1000: 1000 + (n-1000)**(3/4) / evaluation points.</p>
+</div></blockquote>
+<p>Default is None.</p>
+</dd>
+<dt>p_max_cats_z_vars<span class="classifier">Integer (or None), optional</span></dt><dd><p>Maximum number of categories for discretizing continuous z
+variables. None: Number of observations ** 0.3 . Default is None.</p>
+</dd>
+<dt>p_iate<span class="classifier">Boolean (or None), optional</span></dt><dd><p>IATEs will be estimated. Default (or None) is True.</p>
+</dd>
+<dt>p_iate_se<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Standard errors of IATEs will be estimated.
+Default (or None) is False.</p>
+</dd>
+<dt>p_iate_m_ate<span class="classifier">Boolean (or None), optional</span></dt><dd><p>IATEs minus ATE will be estimated. Default (or None) is False.</p>
+</dd>
+<dt>p_ci_level<span class="classifier">Float (or None), optional</span></dt><dd><p>Confidence level for bounds used in plots.
+Default (or None) is 0.9.</p>
+</dd>
+<dt>p_cond_var<span class="classifier">Boolean (or None), optional</span></dt><dd><p>True: Conditional mean &amp; variances are used.
+False: Variance estimation uses wy_i = w_i * y_i directly.
+Default (or None) is True.</p>
+</dd>
+<dt>p_knn<span class="classifier">Boolean (or None), optional</span></dt><dd><p>True: k-NN estimation. False: Nadaraya-Watson estimation.
+Nadaray-Watson estimation gives a better approximaton of the
+variance, but k-NN is much faster, in particular for larger datasets.
+Default (or None) is True.</p>
+</dd>
+<dt>p_knn_min_k<span class="classifier">Integer (or None), optional</span></dt><dd><p>Minimum number of neighbours k-nn estimation.
+Default (or None) is 10.</p>
+</dd>
+<dt>p_nw_bandw<span class="classifier">Float (or None), optional</span></dt><dd><p>Bandwidth for nw estimation: Multiplier of Silverman’s optimal
+bandwidth. Default (or None) is 1.</p>
+</dd>
+<dt>p_nw_kern<span class="classifier">Integer (or None), optional</span></dt><dd><p>Kernel for Nadaraya-Watson estimation: 1: Epanechikov
+2: normal pdf. Default (or None) is 1.</p>
+</dd>
+<dt>p_max_weight_share<span class="classifier">Float (or None), optional</span></dt><dd><p>Truncation of extreme weights. Maximum share of any weight, 0 &lt;,
+&lt;= 1. Enforced by trimming excess weights and renormalisation for
+each (BG,G,I, AMG)ATE separately. Because of renormalisattion, the
+final weights could be somewhat above this threshold.
+Default (or None) is 0.05.</p>
+</dd>
+<dt>p_cluster_std<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Clustered standard errors. Always True if gen_panel_data is True.
+Default (or None) is False.</p>
+</dd>
+<dt>p_se_boot_ate<span class="classifier">Integer or Boolean (or None), optional</span></dt><dd><p>Bootstrap of standard errors for ATE. Specify either a Boolean (if
+True, number of bootstrap replications will be set to 199) or an
+integer corresponding to the number of bootstrap replications (this
+implies True). None: 199 replications p_cluster_std is True,
+and False otherwise. Default is None.</p>
+</dd>
+<dt>p_se_boot_gate<span class="classifier">Integer or Boolean (or None), optional</span></dt><dd><p>Bootstrap of standard errors for GATE. Specify either a Boolean (if
+True, number of bootstrap replications will be set to 199) or an
+integer corresponding to the number of bootstrap replications (this
+implies True). None: 199 replications p_cluster_std is True,
+and False otherwise. Default is None.</p>
+</dd>
+<dt>p_se_boot_iate<span class="classifier">Integer or Boolean (or None), optional</span></dt><dd><p>Bootstrap of standard errors for IATE. Specify either a Boolean (if
+True, number of bootstrap replications will be set to 199) or an
+integer corresponding to the number of bootstrap replications (this
+implies True). None: 199 replications p_cluster_std is True,
+and False otherwise. Default is None.</p>
+</dd>
+<dt>p_bt_yes<span class="classifier">Boolean (or None), optional</span></dt><dd><p>ATE based balancing test based on weights. Relevance of this test
+in its current implementation is not fully clear.
+Default (or None) is True.</p>
+</dd>
+<dt>p_choice_based_sampling<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Choice based sampling to speed up programme if treatment groups
+have very different sizes. Default (or None) is False.</p>
+</dd>
+<dt>p_choice_based_probs<span class="classifier">List of Floats (or None)</span></dt><dd><p>Choice based sampling:  Sampling probabilities to be specified.
+These weights are used for (G,B,AN)ATEs only. Treatment information
+must be available in prediction data. Default is None.</p>
+</dd>
+<dt>p_ate_no_se_only<span class="classifier">Boolean (or None)</span></dt><dd><p>Computes only the ATE without standard errors. Default is False.</p>
+</dd>
+<dt>post_est_stats<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Descriptive Analyses of IATEs (p_iate must be True).
+Default (or None) is True.</p>
+</dd>
+<dt>post_relative_to_first_group_only<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Descriptive Analyses of IATEs: Use only effects relative to
+treatment with lowest treatment value. Default (or None) is True.</p>
+</dd>
+<dt>post_bin_corr_yes<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Descriptive Analyses of IATEs: Checking the binary correlations of
+predictions with features. Default (or None) is True.</p>
+</dd>
+<dt>post_bin_corr_threshold<span class="classifier">Float, optional</span></dt><dd><p>Descriptive Analyses of IATEs: Minimum threshhold of absolute
+correlation to be displayed. Default is 0.1.</p>
+</dd>
+<dt>post_kmeans_yes<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Descriptive Analyses of IATEs: Using k-means clustering to analyse
+patterns in the estimated effects. Default (or None) is True.</p>
+</dd>
+<dt>post_kmeans_no_of_groups<span class="classifier">Integer or List or Tuple (or None), optional</span></dt><dd><p>Descriptive Analyses of IATEs: Number of clusters to be build in
+k-means.
+None: List of 5 values: [a, b, c, d, e]; c = 5 to 10;
+depending on number of observations; c&lt;7: a=c-2, b=c-1, d=c+1,
+e=c+2, else a=c-4, b=c-2, d=c+2, e=c+4. Default is None.</p>
+</dd>
+<dt>post_kmeans_max_tries<span class="classifier">Integer (or None), optional</span></dt><dd><p>Descriptive Analyses of IATEs: Maximum number of iterations of
+k-means to achive convergence. Default (or None) is 1000.</p>
+</dd>
+<dt>post_kmeans_replications<span class="classifier">Integer (or None), optional</span></dt><dd><p>Descriptive Analyses of IATEs: Number of replications with random
+start centers to avoid local extrema. Default (or None) is 10.</p>
+</dd>
+<dt>post_random_forest_vi<span class="classifier">Boolean (or None), optional</span></dt><dd><dl class="simple">
+<dt>Descriptive Analyses of IATEs: Variable importance measure of</dt><dd><p>random forest used to learn factors influencing IATEs.
+Default (or None) is True.</p>
+</dd>
+</dl>
+</dd>
+<dt>post_plots<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Descriptive Analyses of IATEs: Plots of estimated treatment
+effects. Default (or None) is True.</p>
+</dd>
+<dt>p_knn_const<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Multiplier of default number of observation used in movering
+average of analyses method. Default (or None) is 1.</p>
+</dd>
+<dt>var_bgate_name<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Variables to balance the GATEs on. Only relevant if P_BGATE is
+True. The distribution of these variables is kept constant when a
+BGATE is computed. None: Use the other heterogeneity variables
+(<a href="#id1"><span class="problematic" id="id2">var_z_</span></a>…) (if there are any) for balancing. Default is None.</p>
+</dd>
+<dt>var_cluster_name<span class="classifier">String or List of string (or None)</span></dt><dd><p>Name of variable defining clusters. Only relevant if p_cluster_std
+is True. Default is None.</p>
+</dd>
+<dt>var_d_name<span class="classifier">String or List of string (or None), optional</span></dt><dd><p>Name of treatment variable. Must be provided to use the train
+method. Can be provided for the predict method.</p>
+</dd>
+<dt>var_id_name<span class="classifier">String or List of string (or None)</span></dt><dd><p>Identifier. None: Identifier will be added the data.
+Default is None.</p>
+</dd>
+<dt>var_w_name<span class="classifier">String or List of string (or None), optional</span></dt><dd><p>Name of weight. Only relevant if gen_weighted is True.
+Default is None.</p>
+</dd>
+<dt>var_x_balance_name_ord<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Name of ordered variables to be used in balancing tests. Only
+relevant if p_bt_yes is True. Default is None.</p>
+</dd>
+<dt>var_x_balance_name_unord<span class="classifier">String or List of strings (or None),</span></dt><dd><blockquote>
+<div><p>optional</p>
+</div></blockquote>
+<p>Name of Ordered variables to be used in balancing tests. Treatment
+specific descriptive statistics are only printed for those
+variables. Default is None.</p>
+</dd>
+<dt>var_x_name_always_in_ord<span class="classifier">String or List of strings (or None),</span></dt><dd><blockquote>
+<div><p>optional</p>
+</div></blockquote>
+<p>Name of ordered variables that always checked on when deciding on
+the next split during tree building. Only relevant for train
+method. Default is None.</p>
+</dd>
+<dt>var_x_name_always_in_unord<span class="classifier">String or List of strings (or None),</span></dt><dd><blockquote>
+<div><p>optional</p>
+</div></blockquote>
+<p>Name of Unordered variables that always checked on when deciding on
+the next split during tree building. Only relevant for train
+method. Default is None.</p>
+</dd>
+<dt>var_x_name_remain_ord<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Name of ordered variables that cannot be removed by feature
+selection. Only relevant for train method. Default is None.</p>
+</dd>
+<dt>var_x_name_remain_unord<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Name of unordered variables that cannot be removed by feature
+selection. Only relevant for train method. Default is None.</p>
+</dd>
+<dt>var_x_name_ord<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Name of ordered features. Either ordered or unordered features
+must be provided. Default is None.</p>
+</dd>
+<dt>var_x_name_unord<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Name of unordered features. Either ordered or unordered features
+must be provided. Default is None.</p>
+</dd>
+<dt>var_y_name<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Name of outcome variables. If several variables are specified,
+either var_y_tree_name is used for tree building, or (if
+var_y_tree_name is None), the 1st variable in the list is used.
+Only necessary for train method. Default is None.</p>
+</dd>
+<dt>var_y_tree_name<span class="classifier">String or List of string (or None), optional</span></dt><dd><p>Name of outcome variables to be used to build trees. This is only
+relevant if many outcome variables are specified in var_y_name.
+Only relevant for train method. Default is None.</p>
+</dd>
+<dt>var_z_name_list<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Names of ordered variables with many values to define
+causal heterogeneity. They will be discretized (and dependening
+p_gates_smooth) also treated as continuous. If not already included
+in var_x_name_ord, they will be added to the list of features.
+Default is None.</p>
+</dd>
+<dt>var_z_name_ord<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Names of ordered variables with not so many values to define causal
+heterogeneity. If not already included in var_x_name_ord, they will
+be added to the list of features. Default is None.</p>
+</dd>
+<dt>var_z_name_unord<span class="classifier">String or List of strings (or None), optional</span></dt><dd><p>Names of unordered variables with not so many values to define
+causal heterogeneity. If not already included in var_x_name_ord,
+they will be added to the list of features. Default is None.</p>
+</dd>
+<dt>_int_descriptive_stats<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Print descriptive stats if _int_with_output is True.
+Default (or None) is True.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_show_plots<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Execute show() command if _int_with_output is True.
+Default (or None) is True.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_dpi<span class="classifier">Integer (or None), optional</span></dt><dd><p>dpi in plots. Default (or None) is 500.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_fontsize<span class="classifier">Integer (or None), optional</span></dt><dd><p>Font for legends, from 1 (very small) to 7 (very large).
+Default (or None) is 2.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_no_filled_plot<span class="classifier">Integer (or None), optional</span></dt><dd><p>Use filled plot if more than _int_no_filled_plot different values.
+Default (or None) is 20.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_max_cats_cont_vars<span class="classifier">Integer (or None), optional</span></dt><dd><p>Discretise continuous variables: _int_max_cats_cont_vars is maximum
+number of categories for continuous variables. This speeds up the
+programme but may introduce some bias. None: No use of
+discretisation to speed up programme. Default is None.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_max_save_values<span class="classifier">Integer (or None), optional</span></dt><dd><p>Save value of features in table only if less than
+_int_max_save_values different values. Default (or None) is 50.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_mp_ray_del<span class="classifier">Tuple of strings (or None), optional</span></dt><dd><p>‘refs’: Delete references to object store.
+‘rest’: Delete all other objects of Ray task.
+‘none’: Delete no objects.
+These 3 options can be combined. . Default  is (‘refs’,).
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_mp_ray_objstore_multiplier<span class="classifier">Float (or None), optional</span></dt><dd><p>Changes internal default values for  Ray object store. Change above
+1 if programme crashes because object store is full. Only relevant
+if _int_mp_ray_shutdown is True. Default (or None) is 1.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_mp_ray_shutdown<span class="classifier">Boolean (or None), optional</span></dt><dd><p>When computing the mcf repeatedly like in Monte Carlo studies,
+setting _int_mp_ray_shutdown to True may be a good idea.
+None: False if obs &lt; 100000, True otherwise. Default is None.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_mp_vim_type<span class="classifier">Integer (or None), optional</span></dt><dd><p>Type of multiprocessing when computing variable importance
+statistics:  1: variable based (fast, lots of memory),</p>
+<blockquote>
+<div><p>2: bootstrap based (slower, less memory)
+None: 1 if obs &lt; 20000, 2 otherwise. Default is None.</p>
+</div></blockquote>
+<p>Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_mp_weights_tree_batch<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of batches to split data in weight computation: The smaller
+the number of batches, the faster the programme and the more memory
+is needed. None: Automatically determined. Default is None.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_mp_weights_type<span class="classifier">Integer (or None), optional</span></dt><dd><dl class="simple">
+<dt>Type of multiprocessing when computing weights:</dt><dd><p>1: groups-of-obs based (fast, lots of memory)
+2: tree based (takes forever, less memory)</p>
+</dd>
+</dl>
+<p>Default (or None) is 1.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_output_no_new_dir: Boolean</dt><dd><p>Do not create a new directory when the path already exists. Default
+is False.</p>
+</dd>
+<dt>_int_return_iate_sp<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Return all data with predictions despite _int_with_output is False
+(useful for cross-validation and simulations).
+Default (or None) is False.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_seed_sample_split<span class="classifier">Integer (or None), optional</span></dt><dd><p>Seeding is redone when building forest.
+Default (or None) is 67567885.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_share_forest_sample<span class="classifier">Float (or None), optional</span></dt><dd><p>Share of sample used build forest. Default (or None) is 0.5.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_verbose<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Additional output about running of mcf if _int_with_output is True.
+Default (or None) is True.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_weight_as_sparse<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Save weights matrix as sparse matrix. Default (or None) is True.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_weight_as_sparse_splits<span class="classifier">Integer (or None), optional</span></dt><dd><p>Compute sparse weight matrix in several chuncks.
+Default: None: int(Rows of prediction data * rows of Fill_y data</p>
+<blockquote>
+<div><p>/ (20’000 * 20’000)).</p>
+</div></blockquote>
+<p>Default is None.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_with_output<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Print output on txt file and/or console. Default (or None) is True.
+Internal variable, change default only if you know what you do.</p>
+</dd>
+<dt>_int_del_forest<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Delete forests from instance. If True, less memory is needed, but
+the trained instance of the class cannot be reused when calling
+predict with the same instance again, i.e. the forest has to be
+retrained when applied again. Default is False.</p>
+</dd>
+<dt>_int_keep_w0<span class="classifier">Boolean (or None), optional.</span></dt><dd><p>Keep all zeros weights when computing standard errors (slows down
+computation and may lead to undesirable behaviour).
+Default is False.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.analyse">
+<span class="sig-name descname"><span class="pre">analyse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.analyse" title="Link to this definition">#</a></dt>
+<dd><p>Analyse estimated IATE with various descriptive tools.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>results</strong> (<em>Dictionary</em>) – Contains estimation results. This dictionary must have the same
+structure as the one returned from the predict method.</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – Some of the attribute are not compatible with running this method.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>results_plus_cluster</strong> – Same as the results dictionary, but the DataFrame with estimated
+IATEs contains an additional integer with a group label that comes
+from k-means clustering.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.blinder_iates">
+<span class="sig-name descname"><span class="pre">blinder_iates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind_var_x_protected_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind_var_x_policy_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind_var_x_unrestricted_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind_weights_of_blind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind_obs_ref_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blind_seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">123456</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.blinder_iates" title="Link to this definition">#</a></dt>
+<dd><p>Compute IATEs that causally depend less on protected variables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_df</strong> (<em>DataFrame.</em>) – Contains data needed to predict the various adjusted IATES.</p></li>
+<li><p><strong>blind_var_x_protected_name</strong> (<em>List</em><em> of </em><em>strings</em><em> (or </em><em>None</em><em>)</em><em>, </em><em>optional</em>) – Names of protected variables. Names that are
+explicitly denoted as blind_var_x_unrestricted_name or as
+blind_var_x_policy_name and used to compute IATEs will be
+automatically added to this list. Default is None.</p></li>
+<li><p><strong>blind_var_x_policy_name</strong> (<em>List</em><em> of </em><em>strings</em><em> (or </em><em>None</em><em>)</em><em>, </em><em>optional</em>) – Names of decision variables. Default is None.</p></li>
+<li><p><strong>blind_var_x_unrestricted_name</strong> (<em>List</em><em> of </em><em>strings</em><em> (or </em><em>None</em><em>)</em><em>, </em><em>optional</em>) – Names of unrestricted variables. Default is None.</p></li>
+<li><p><strong>blind_weights_of_blind</strong> (<em>Tuple</em><em> of </em><em>float</em><em> (or </em><em>None</em><em>)</em><em>, </em><em>optional</em>) – Weights to compute weighted means of blinded and unblinded IATEs.
+Between 0 and 1. 1 implies all weight goes to fully blinded IATEs.</p></li>
+<li><p><strong>blind_obs_ref_data</strong> (<em>Integer</em><em> (or </em><em>None</em><em>)</em><em>, </em><em>optional</em>) – Number of observations to be used for blinding. Runtime of
+programme is almost linear in this parameter. Default is 50.</p></li>
+<li><p><strong>blind_seed</strong> (<em>Integer</em><em>, </em><em>optional.</em>) – Seed for the random selection of the reference data.
+Default is 123456.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>blinded_dic</strong> (<em>Dictionary.</em>) – Contains potential outcomes that do not fully
+depend on some protected attributes (and non-modified IATE).</p></li>
+<li><p><strong>data_on_support_df</strong> (<em>DataFrame.</em>) – Features that are on the common support.</p></li>
+<li><p><strong>var_x_policy_ord_name</strong> (<em>List of strings, optional</em>) – Ordered variables to be used to build the decision rules.</p></li>
+<li><p><strong>var_x_policy_unord_name</strong> (<em>List of strings.</em>) – Unordered variables to be used to build the decision rules.</p></li>
+<li><p><strong>var_x_blind_ord_name</strong> (<em>List of strings, optional</em>) – Ordered variables to be used to blind potential outcomes.</p></li>
+<li><p><strong>var_x_blind_unord_name</strong> (<em>List of strings.</em>) – Unordered variables to be used to blind potential outcomes.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.predict">
+<span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.predict" title="Link to this definition">#</a></dt>
+<dd><p>Compute all effects given a causal forest estimated with train method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data_df</strong> (<em>DataFrame</em>) – <p>Data used to compute the predictions. It must contain information
+about features (and treatment if effects for treatment specific</p>
+<blockquote>
+<div><p>subpopulations are desired as well).</p>
+</div></blockquote>
+</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p><strong>results</strong> – Results. This dictionary has the following structure:
+‘ate’: ATE, ‘ate_se’: Standard error of ATE,
+‘ate effect_list’: List of names of estimated effects,
+‘gate’: GATE, ‘gate_se’: SE of GATE,
+‘gate_diff’: GATE minus ATE,
+‘gate_diff_se’: Standard error of GATE minus ATE,
+‘amgate’: AMGATE (all covariates balanced),
+‘amgate_se’: Standard error of AMGATE,
+‘amgate_diff’: AMGATE minus ATE,
+‘amgate_diff_se’: Standard error of AMGATE minus ATE,
+‘bgate’: BGATE (only prespecified covariates balanced),
+‘bgate_se’: Standard error of BGATE,
+‘bgate_diff’: BGATE minus ATE,
+‘bgate_diff_se’: Standard errror of BGATE minus ATE,
+‘iate’: IATE, ‘iate_se’: Standard error of IATE,
+‘iate_eff’: (More) Efficient IATE (IATE estimated twice and</p>
+<blockquote>
+<div><p>averaged where role of tree_building and tree_filling
+sample is exchanged),</p>
+</div></blockquote>
+<p>’iate_data_df’: DataFrame with IATEs,
+‘iate_names_dic’: Dictionary containing names of IATEs,
+‘bala’: Effects of balancing tests,
+‘bala_se’: Standard error of effects of balancing tests,
+‘bala_effect_list’: Names of effects of balancing tests</p>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mcf_example.ModifiedCausalForest.train">
+<span class="sig-name descname"><span class="pre">train</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mcf_example.ModifiedCausalForest.train" title="Link to this definition">#</a></dt>
+<dd><p>Build the modified causal forest on the training data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data_df</strong> (<em>DataFrame</em>) – Data used to compute the causal forest. It must contain information
+about outcomes, treatment, and features.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>tree_df</strong> (<em>DataFrame</em>) – Dataset used to build the forest.</p></li>
+<li><p><strong>fill_y_df</strong> (<em>DataFrame</em>) – Dataset used to populate the forest with outcomes.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-optpol_example">
+<span id="optimal-policy"></span><h2>Optimal Policy<a class="headerlink" href="#module-optpol_example" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">optpol_example.</span></span><span class="sig-name descname"><span class="pre">OptimalPolicy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dc_check_perfectcorr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_clean_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_min_dummy_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_screen_covariates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'best_policy_score'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_outfiletext</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'txtFileWithOutput'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_outpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_output_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_variable_importance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_costs_of_treat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_costs_of_treat_mult</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_max_shares</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_enforce_restriction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_eva_cat_mult</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_no_of_evalupoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_min_leaf_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_select_values_cat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rnd_shares</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_bb_restrict_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_d_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_effect_vs_0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_effect_vs_0_se</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_id_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_polscore_desc_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_polscore_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_vi_x_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_vi_to_dummy_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_ord_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_unord_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_how_many_parallel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_output_no_new_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_parallel_processing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_with_numba</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_with_output</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.OptimalPolicy" title="Link to this definition">#</a></dt>
+<dd><p>The class contains all methods necessary for the Optimal Policy module.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.int_dict">
+<span class="sig-name descname"><span class="pre">int_dict</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.int_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in many parts of the class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.dc_dict">
+<span class="sig-name descname"><span class="pre">dc_dict</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.dc_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used in data cleaning.
+List of list containing the estimated causal forest.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.gen_dict">
+<span class="sig-name descname"><span class="pre">gen_dict</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.gen_dict" title="Link to this definition">#</a></dt>
+<dd><p>General parameters used in various parts of the programme.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.other_dict">
+<span class="sig-name descname"><span class="pre">other_dict</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.other_dict" title="Link to this definition">#</a></dt>
+<dd><dl class="simple">
+<dt>Contains other relevant information needed for allocation (like</dt><dd><p>cost, constraints)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.pt_dict">
+<span class="sig-name descname"><span class="pre">pt_dict</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.pt_dict" title="Link to this definition">#</a></dt>
+<dd><p>Parameters used to build policy tree.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.rnd_dict">
+<span class="sig-name descname"><span class="pre">rnd_dict</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.rnd_dict" title="Link to this definition">#</a></dt>
+<dd><p>Shares for random allocation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.time_strings">
+<span class="sig-name descname"><span class="pre">time_strings</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.time_strings" title="Link to this definition">#</a></dt>
+<dd><p>Detailed information on how the long the different methods needed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.var_dict">
+<span class="sig-name descname"><span class="pre">var_dict</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.var_dict" title="Link to this definition">#</a></dt>
+<dd><p>Variable names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.var_x_type">
+<span class="sig-name descname"><span class="pre">var_x_type</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.var_x_type" title="Link to this definition">#</a></dt>
+<dd><p>Types of covariates (internal).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.var_x_values">
+<span class="sig-name descname"><span class="pre">var_x_values</span></span><a class="headerlink" href="#optpol_example.OptimalPolicy.var_x_values" title="Link to this definition">#</a></dt>
+<dd><p>Values of covariates (internal).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">solve</span> <span class="pre">:</span> <span class="pre">Building</span> <span class="pre">the</span> <span class="pre">assignment</span> <span class="pre">algorithm</span> <span class="pre">with</span> <span class="pre">training</span> <span class="pre">data.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">allocate</span> <span class="pre">:</span> <span class="pre">Allocate</span> <span class="pre">treatments</span> <span class="pre">given</span> <span class="pre">the</span> <span class="pre">assignment</span> <span class="pre">algorithm.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">evaluate</span> <span class="pre">:</span> <span class="pre">Evaluate</span> <span class="pre">an</span> <span class="pre">allocation.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">evaluate_multiple</span> <span class="pre">:</span> <span class="pre">Evaluate</span> <span class="pre">several</span> <span class="pre">allocations</span> <span class="pre">simultanously.</span></span></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dc_check_perfectcorr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_clean_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_min_dummy_obs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dc_screen_covariates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'best_policy_score'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_outfiletext</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'txtFileWithOutput'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_outpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_output_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_variable_importance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_costs_of_treat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_costs_of_treat_mult</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">other_max_shares</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_enforce_restriction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_eva_cat_mult</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_no_of_evalupoints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_min_leaf_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pt_select_values_cat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rnd_shares</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_bb_restrict_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_d_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_effect_vs_0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_effect_vs_0_se</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_id_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_polscore_desc_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_polscore_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_vi_x_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_vi_to_dummy_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_ord_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_x_unord_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_how_many_parallel</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_output_no_new_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_parallel_processing</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_with_numba</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_int_with_output</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.OptimalPolicy.__init__" title="Link to this definition">#</a></dt>
+<dd><p>Define Constructor for OptimalPolicy class.</p>
+<section id="args">
+<h3>Args:<a class="headerlink" href="#args" title="Link to this heading">#</a></h3>
+<dl>
+<dt>dc_screen_covariates<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Check features. Default (or None) is True.</p>
+</dd>
+<dt>dc_check_perfectcorr<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Features that are perfectly correlated are deleted (1 of them).
+Only relevant if dc_screen_covariates is True.
+Default (or None) is True.</p>
+</dd>
+<dt>dc_min_dummy_obs<span class="classifier">Integer (or None), optional</span></dt><dd><p>Delete dummmy variables that have less than dc_min_dummy_obs in one
+of their categories. Only relevant if dc_screen_covariates is True.
+Default (or None) is 10.</p>
+</dd>
+<dt>dc_clean_data<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Remove all missing &amp; unnecessary variables.
+Default (or None) is True.</p>
+</dd>
+<dt>gen_method<span class="classifier">String (or None), optional.</span></dt><dd><p>Method to compute assignment algorithm (available methods:
+‘best_policy_score’, ‘policy tree’, ‘policy tree eff’)
+‘best_policy_score’ conducts Black-Box allocations, which are
+obtained by using the scores directly (potentially subject to
+restrictions). When the Black-Box allocations are used for
+allocation of data not used for training, the respective scores
+must be available.
+The implemented ‘policy tree’ ‘s are optimal trees, i.e. all
+possible trees are checked if they lead to a better performance.
+If restrictions are specified, then this is incorparated into
+treatment specific cost parameters. Many ideas of the
+implementation follow Zhou, Athey, Wager (2022). If the provided
+policy scores fulfil their conditions (i.e., they use a doubly
+robust double machine learning like score), then they also provide
+attractive theoretical properties.
+‘policy tree eff’ is very similar to ‘policy tree.’ It uses
+different approximation rules and uses slightly different coding.
+In many cases it should be faster than ‘policy tree’.
+Default (or None) is ‘best_policy_score’.</p>
+</dd>
+<dt>gen_outfiletext<span class="classifier">String (or None), optional</span></dt><dd><p>File for text output. <a href="#id1"><span class="problematic" id="id2">*</span></a>.txt file extension will be automatically
+added. Default (or None) is ‘txtFileWithOutput’.</p>
+</dd>
+<dt>gen_outpath<span class="classifier">String (or None), optional</span></dt><dd><p>Directory to where to put text output and figures. If it does not
+exist, it will be created.
+None: <a href="#id3"><span class="problematic" id="id4">*</span></a>.out directory just below to the directory where the
+programme is run. Default is None.</p>
+</dd>
+<dt>gen_output_type<span class="classifier">Integer (or None), optional</span></dt><dd><p>Destination of the output. 0: Terminal, 1: File,
+2: File and terminal. Default (or None) is 2.</p>
+</dd>
+<dt>gen_variable_importance<span class="classifier">Boolean</span></dt><dd><p>Compute variable importance statistics based on random forest
+classifiers. Default is False.</p>
+</dd>
+<dt>other_costs_of_treat<span class="classifier">List of floats (or None), optional</span></dt><dd><p>Treatment specific costs. These costs are directly substracted from
+the policy scores. Therefore, they should be measured in the same
+units as the scores.
+None (when there are no constraints): 0
+None (when are constraints): Costs will be automatically determined</p>
+<blockquote>
+<div><p>such as to enforce constraints in the training data by finding
+cost values that lead to an allocation (‘best_policy_score’)
+that fulfils restrictions other_max_shares.</p>
+</div></blockquote>
+<p>Default is None.</p>
+</dd>
+<dt>other_costs_of_treat_mult<span class="classifier">Float or tuple of floats (with as many</span></dt><dd><blockquote>
+<div><p>elements as treatments) (or None), optional</p>
+</div></blockquote>
+<p>Multiplier of automatically determined cost values. Use only when
+automatic costs violate the constraints given by OTHER_MAX_SHARES.
+This allows to increase (&gt;1) or decrease (&lt;1) the share of treated
+in particular treatment. None: (1, …, 1). Default is None.</p>
+</dd>
+<dt>other_max_shares<span class="classifier">Tuple of float elements as treatments) (or None),</span></dt><dd><blockquote>
+<div><p>optional</p>
+</div></blockquote>
+<p>Maximum share allowed for each treatment. Default is None.</p>
+</dd>
+<dt>pt_depth<span class="classifier">Integer (or None), optional</span></dt><dd><p>Depth of tree. Defined such that pt_depth == 1 implies 2 splits,
+pt_depth = 2 implies 4 leafs, pt_depth= 3 implies 8 leafs, etc.
+Only relevant if gen_method is ‘policy tree’.
+Default (or None) is 3.</p>
+</dd>
+<dt>pt_enforce_restriction<span class="classifier">Boolean (or None)</span></dt><dd><p>Enforces the imposed restriction (to some extent) during the
+computation of the policy tree. This can be very time consuming.
+Default is True.</p>
+</dd>
+<dt>pt_eva_cat_mult<span class="classifier">Integer (or None).</span></dt><dd><p>Changes the number of the evaluation points (pt_no_of_evalupoints)
+for the unordered (categorical) variables to:</p>
+<blockquote>
+<div><p>pt_eva_cat_mult * pt_no_of_evalupoints</p>
+</div></blockquote>
+<p>(available only for the method ‘policy tree eff’).
+Default (or None is 1).</p>
+</dd>
+<dt>pt_no_of_evalupoints<span class="classifier">Integer (or None), optional</span></dt><dd><p>No of evaluation points for continous variables. The lower this
+value, the faster the algorithm, but it may also deviate more from
+the optimal splitting rule. This parameter is closely related to
+the approximation parameter of Zhou, Athey, Wager (2022)(A) with
+pt_no_of_evalupoints = number of observation / A.
+Only relevant if gen_method is ‘policy tree’ or ‘policy tree eff’.
+Default (or None) is 100.</p>
+</dd>
+<dt>pt_min_leaf_size<span class="classifier">Integer (or None), optional</span></dt><dd><p>Minimum leaf size. Leaves that are smaller than PT_MIN_LEAF_SIZE in
+the training data will not be considered. A larger number reduces
+computation time and avoids some overfitting.
+None: 0.1 x # of training observations / # of leaves.
+Only relevant if gen_method is ‘policy tree’. Default is None.</p>
+</dd>
+<dt>pt_select_values_cat<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Approximation method for larger categorical variables. Since we
+search among optimal trees, for catorgical variables variables we
+need to check for all possible combinations of the different values
+that lead to binary splits. Thus number could indeed be huge.
+Therefore, we compare only pt_no_of_evalupoints * 2 different
+combinations. Method 1 (pt_select_values_cat == True) does this by
+randomly drawing values from the particular categorical variable
+and forming groups only using those values. Method 2
+(pt_select_values_cat == False) sorts the values of the categorical
+variables according to a values of the policy score as one would do
+for a standard random forest. If this set is still too large, a
+random sample of the entailed combinations is drawn. Method 1 is
+only available for the method ‘policy tree eff’.</p>
+</dd>
+<dt>rnd_shares<span class="classifier">Tuple of floats (or None), optional</span></dt><dd><p>Share of treatments of a stochastic assignment as computed by the
+evaluate method. Sum of all elements must add to 1. This used only
+used as a comparison in the evaluation of other allocations.
+None: Shares of treatments in the allocation under investigation.
+Default is None.</p>
+</dd>
+<dt>var_vi_x_name<span class="classifier">List of strings or None, optional</span></dt><dd><p>Names of variables for which variable importance is computed.
+Default is None.</p>
+</dd>
+<dt>var_vi_to_dummy_name<span class="classifier">List of strings or None, optional</span></dt><dd><p>Names of variables for which variable importance is computed.
+These variables will be broken up into dummies. Default is None.</p>
+</dd>
+<dt>var_bb_restrict_name<span class="classifier">String (or None), optional</span></dt><dd><p>Name of variable related to a restriction in case of capacity
+constraints. If there is a capacity constraint, preference will be
+given to observations with highest values of this variable.
+Only relevant if gen_method is ‘best_policy_score’.
+Default is None.</p>
+</dd>
+<dt>var_d_name<span class="classifier">String (or None), optional</span></dt><dd><p>Name of (discrete) treatment. Needed in training data only if
+‘changers’ (different treatment in alloication than observed
+treatment) are analysed and if allocation is compared to observed
+allocation (in evaluate method). Default is None.</p>
+</dd>
+<dt>var_effect_vs_0<span class="classifier">Tuple of strings (or None), optional</span></dt><dd><p>Name of variables of effects of treatment relative to first
+treatment. Dimension is equal to the number of treatments minus 1.
+Default is None.</p>
+</dd>
+<dt>var_effect_vs_0_se<span class="classifier">Tuple of strings (or None), optional</span></dt><dd><p>Name of variables of effects of treatment relative to first
+treatment. Dimension is equal to the number of treatments minus 1.
+Default is None.</p>
+</dd>
+<dt>var_id_name<span class="classifier">(or None), optional</span></dt><dd><p>Name of identifier in data. Default is None.</p>
+</dd>
+<dt>var_polscore_desc_name<span class="classifier">Tuple of tuples of strings (or None), optional</span></dt><dd><p>Each tuple of dimension equal to the different treatments
+contains treatment specific variables that are used to evaluate the
+effect of the allocation with respect to those variables. This
+could be for example policy score not used in training,but which
+are relevant nevertheless. Default is None.</p>
+</dd>
+<dt>var_polscore_name<span class="classifier">Tuple of strings (or None), optional</span></dt><dd><p>Names of treatment specific variables to measure the value of
+individual treatments. This is ususally the estimated potential
+outcome or any other score related. This is required for the solve
+method. Default is None.</p>
+</dd>
+<dt>var_x_ord_name<span class="classifier">Tuple of strings (or None), optional</span></dt><dd><p>Name of ordered variables used to build policy tree. They are also
+used to characterise the allocation. Default is None.</p>
+</dd>
+<dt>var_x_unord_name<span class="classifier">Tuple of strings (or None), optional</span></dt><dd><p>Name of unordered variables used to build policy tree. They are
+also used to characterise the allocation. Default is None.</p>
+</dd>
+<dt>_int_how_many_parallel<span class="classifier">Integer (or None), optional</span></dt><dd><p>Number of parallel process. None: 80% of logical cores, if this can
+be effectively implemented. Default is None.</p>
+</dd>
+<dt>_int_output_no_new_dir: Boolean</dt><dd><p>Do not create a new directory when the path already exists. Default
+is False.</p>
+</dd>
+<dt>_int_parallel_processing<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Multiprocessing.
+Default (or None) is True.</p>
+</dd>
+<dt>_int_with_numba<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Use Numba to speed up computations. Default (or None) is True.</p>
+</dd>
+<dt>_int_with_output<span class="classifier">Boolean (or None), optional</span></dt><dd><p>Print output on file and/or screen. Default (or None) is True.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.allocate">
+<span class="sig-name descname"><span class="pre">allocate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.OptimalPolicy.allocate" title="Link to this definition">#</a></dt>
+<dd><p>Allocate observations to treatment state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_df</strong> (<em>DataFrame</em>) – Input data with at least features or policy scores
+(depending on algorithm).</p></li>
+<li><p><strong>data_title</strong> (<em>String</em><em>, </em><em>optional</em>) – This string is used as title in outputs. The default is ‘’.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>allocation_df</strong> – data_df with optimal allocation appended.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.evaluate">
+<span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allocation_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">12434</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.OptimalPolicy.evaluate" title="Link to this definition">#</a></dt>
+<dd><p>Evaluate allocation with potential outcome data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>allocation_df</strong> (<em>DataFrame</em>) – Optimal allocation as outputed by the solve and allocate methods.</p></li>
+<li><p><strong>data_df</strong> (<em>DataFrame</em>) – Additional information that can be linked to allocation_df.</p></li>
+<li><p><strong>data_title</strong> (<em>String</em><em>, </em><em>optional</em>) – This string is used as title in outputs. The default is ‘’.</p></li>
+<li><p><strong>seed</strong> (<em>Integer</em><em>, </em><em>optional</em>) – Seed for random number generators. The default is 12434.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>results_dic</strong> – Collected results of evaluation with self-explanatory keys.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dictory</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.evaluate_multiple">
+<span class="sig-name descname"><span class="pre">evaluate_multiple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">allocations_dic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.OptimalPolicy.evaluate_multiple" title="Link to this definition">#</a></dt>
+<dd><p>Evaluate several allocations simultanously.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>allocations_dic</strong> (<em>Dictionary.</em>) – Contains dataframes with specific allocations.</p></li>
+<li><p><strong>data_df</strong> (<em>DataFrame.</em>) – Data with the relevant information about potential outcomes which
+will be used to evaluate the allocations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.print_time_strings_all_steps">
+<span class="sig-name descname"><span class="pre">print_time_strings_all_steps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.OptimalPolicy.print_time_strings_all_steps" title="Link to this definition">#</a></dt>
+<dd><p>Print an overview over the time needed in all steps of programme.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="optpol_example.OptimalPolicy.solve">
+<span class="sig-name descname"><span class="pre">solve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.OptimalPolicy.solve" title="Link to this definition">#</a></dt>
+<dd><p>Solve for optimal allocation rule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data_df</strong> (<em>DataFrame</em>) – Input data to train particular allocation algorithm.</p></li>
+<li><p><strong>data_title</strong> (<em>String</em><em>, </em><em>optional</em>) – This string is used as title in outputs. The default is ‘’.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>allocation_df</strong> – data_df with optimal allocation appended.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="optpol_example.print_dic_values_all_optp">
+<span class="sig-prename descclassname"><span class="pre">optpol_example.</span></span><span class="sig-name descname"><span class="pre">print_dic_values_all_optp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">optp_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summary_top</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summary_dic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.print_dic_values_all_optp" title="Link to this definition">#</a></dt>
+<dd><p>Print the dictionaries.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="optpol_example.print_dic_values_optp">
+<span class="sig-prename descclassname"><span class="pre">optpol_example.</span></span><span class="sig-name descname"><span class="pre">print_dic_values_optp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">optp_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">summary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#optpol_example.print_dic_values_optp" title="Link to this definition">#</a></dt>
+<dd><p>Print values of dictionaries that determine module.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to the MCF!</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-mcf_example">MCF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.blind_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.blind_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.cf_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.cf_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.cs_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.cs_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.ct_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.ct_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.int_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.int_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.dc_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.dc_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.fs_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.fs_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.forest"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.forest</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.gen_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.gen_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.lc_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.lc_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.p_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.p_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.post_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.post_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.time_strings"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.time_strings</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.var_dict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.var_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.var_x_type"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.var_x_type</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.var_x_values"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.var_x_values</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.__init__"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.__init__()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.analyse"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.analyse()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.blinder_iates"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.blinder_iates()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.predict"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.predict()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mcf_example.ModifiedCausalForest.train"><code class="docutils literal notranslate"><span class="pre">ModifiedCausalForest.train()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-optpol_example">Optimal Policy</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.int_dict"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.int_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.dc_dict"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.dc_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.gen_dict"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.gen_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.other_dict"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.other_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.pt_dict"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.pt_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.rnd_dict"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.rnd_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.time_strings"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.time_strings</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.var_dict"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.var_dict</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.var_x_type"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.var_x_type</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.var_x_values"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.var_x_values</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.__init__"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.__init__()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.allocate"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.allocate()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.evaluate"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.evaluate()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.evaluate_multiple"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.evaluate_multiple()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.print_time_strings_all_steps"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.print_time_strings_all_steps()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.OptimalPolicy.solve"><code class="docutils literal notranslate"><span class="pre">OptimalPolicy.solve()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.print_dic_values_all_optp"><code class="docutils literal notranslate"><span class="pre">print_dic_values_all_optp()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optpol_example.print_dic_values_optp"><code class="docutils literal notranslate"><span class="pre">print_dic_values_optp()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="_sources/api.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright workshop participant.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
